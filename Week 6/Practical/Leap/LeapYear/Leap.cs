@@ -22,6 +22,7 @@
 */
 
 using System;
+using System.Diagnostics;
 
 namespace LeapYear
 {
@@ -36,8 +37,28 @@ namespace LeapYear
         /// <exception cref="NotImplementedException"></exception>
         public static bool IsLeapYear(int year)
         {
-            //TODO Implement the IsLeapYear method
-            throw new NotImplementedException("You need to implement this function.");
+
+            //return DateTime.IsLeapYear(year);
+
+            ////TODO Implement the IsLeapYear method
+            int Year = year;
+            bool leap;
+
+            if (Year % 4 == 0)
+            {
+                if (Year % 100 == 0)
+                {
+                    if (Year % 400 == 0)
+                    {
+                        return true;
+                    }
+                    return false; 
+                }
+                return true;
+            }
+            return false;
+
+            //throw new NotImplementedException("You need to implement this function.");
         }
     }
 }

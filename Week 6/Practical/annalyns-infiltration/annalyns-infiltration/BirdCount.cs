@@ -34,8 +34,9 @@ public class BirdCount
     /// <exception cref="NotImplementedException"></exception>
     public static int[] LastWeek()
     {
+        
         // TODO: Implement the 'LastWeek()' method
-        throw new NotImplementedException("Please implement the (static) BirdCount.LastWeek() method");
+        //throw new NotImplementedException("Please implement the (static) BirdCount.LastWeek() method");
     }
 
     /// <summary>
